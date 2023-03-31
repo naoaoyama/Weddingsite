@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --defaultpink : rgb(243, 86, 104);
+  --defaultPinkTransparent : rgba(243, 86, 104, 0.5);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ##################### */
+/* mobileversion */
+/* ##################### */
+
+@media (min-width: 200px) {
+
+  header {
+    height: 45vh;
+    display: flex;
+    background-image: url(../img/pexels-tuğba-kobal-yılmaz-14932374.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 10vh;
+    border-bottom-right-radius: 10vh;
+  }
+ 
+
+  header article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5vh;
+  }
+
+header article h1,
+header article h2 {
+  color: white;
+  text-align: center;
+  font-family: Snell Roundhand, cursive;
+}
+
+header article h1 {
+  font-size: 26px;
+}
+
+header article > a, 
+.about > aside a,
+.features a,
+.contact a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 15vh;
+  height: 5vh;
+  font-weight: 500;
+}
+
+header article >a,
+.features a {
+  border: 3px solid white;
+  background-color: white;
+  color: var(--defaultpink);
+}
+
+header article > section {
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+  header > section {
+    border-bottom-left-radius: 10vh;
+    border-bottom-right-radius: 10vh;
+    width: 100%;
+    height: 100%;
+    background-color: var(--defaultPinkTransparent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+nav {
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 10vh;
+  width: 85%;
+  position: relative;
+}
+
+nav > aside {
+  display: flex;
+  column-gap: 2vh;
+  padding: 1%;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 26px;
+  font-family: Snell Roundhand, cursive;
+
+}
+
+nav i {
+  color: var(--defaultpink);
+  font-size: 24px;
+}
+   nav > ul {
+    display: none;
+   }
+
+   details {
+    position: absolute;
+    width: 90%;
+    text-align: right;
+   }
+
+   details > ul {
+    margin-top: 3vh;
+    position: absolute;
+    background-color: white;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   }
+
+
+   details li {
+    list-style-type: none;
+    padding: 5%;
+   }
+
+   details a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+   }
+   summary {
+    font-size: 28px;
+   }
+
+/* HEDARE END */
+
+/* ABOUT */
+
+.about > section,
+.features > section {
+  row-gap: 5vh;
+}
+
+.about,
+.features,
+.contact,
+footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
+  align-items: center;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+}
+
+.about > article,
+.about > section,
+.about > aside,
+.features > article,
+.features > section,
+.features aside,
+.contact > article,
+.contact > form,
+.contact article,
+.contact aside, 
+.contact form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2vh;
+  text-align: center;
+}
+
+.about figure {
+  width: 40vh;
+  height: 40vh;
+  border-radius: 50%;
+  border: 10px solid var(--defaultpink);
+}
+
+.about img {
+  border-radius: 50%;
+  height: 40vh;
+  width: 40vh;
+}
+
+
+.about h2,
+.features h2,
+.contact h2 {
+  border-bottom: 1px solid var(--defaultpink);
+  padding: 1vh;
+  width: fit-content;
+  font-family: Snell Roundhand, cursive;
+}
+
+.about > aside {
+  width: 90%;
+}
+
+.about > aside p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.about > aside a,
+.contact a {
+  border: 3px solid black;
+  background-color: black;
+  color: white;
+  width: 20vh;
+}
+/* ABOUT END */
+
+/* FEATURES */
+
+.features {
+  background-color: var(--defaultpink);
+ color: white;}
+
+.features figure {
+  width: 20vh;
+  height: 20vh;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.features figcaption {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+}
+
+.features h3 {
+  text-transform: uppercase
+}
+
+.features h2 {
+  border-bottom: 1px solid ghostwhite;
+}
+
+
+.features a {
+  color: black;
+}
+
+
+/* FEATURES END */
+
+/* CONTACT */
+
+input {
+  border: 1px solid black;
+  padding: 5%; 
+  width: 170%;
+}
+
+/* CONTACT END*/
+
+/* FOOTER */
+footer {
+  background-color: rgb(73, 69, 69);
+  color: whitesmoke;
+  text-align: center;
+}
+
+footer > aside,
+footer h2 {
+  color: whitesmoke;
+  font-family: Snell Roundhand, cursive;
+}
+
+footer > article {
+  width: 80%;
+}
+
+footer > aside {
+  border-top: 1px solid whitesmoke;
+  padding-top: 2vh;
+}
+footer h1 {
+  color: var(--defaultpink);
+  font-family: Snell Roundhand, cursive;
+}
+/* FOOTER END */
+
+}
+
+/* ################### */
+/* tabletversion */
+/* ################## */
+@media (min-width: 600px) {
+  nav {
+    padding: 2%;
+  }
+
+  nav > ul {
+    display: flex;
+    display: flex;
+    column-gap: 3vh;
+  }
+
+  nav li {
+    list-style: none;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: var(--defaultpink);
+    transition: .4s;
+  }
+
+  details {
+    display: none;
+  }
+
+  header nav h1 {
+    font-size: 30px;
+  }
+
+  article section h1,
+  footer h1 {
+    font-size: 35px;
+  } 
+
+  h2 {
+    font-size: 45px;
+  }
+
+  .about section,
+  .features section {
+    flex-direction: row;
+    column-gap: 3vh;
+  }
+
+  .about > aside p {
+    font-size: 15px;
+  }
+  
+  .about figure {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 50%;
+    border: 10px solid var(--defaultpink);
+  }
+  
+  .about img {
+    border-radius: 50%;
+    height: 25vh;
+    width: 25vh;
+  }
+
+  .features figure {
+    width: 15vh;
+    height: 15vh;
+    border: 5px solid white;
+    border-radius: 50%;
+  }
+  
+  .features figcaption {
+    font-size: 70px;
+  }
+  
+  .features section {
+    justify-content: center;
+    align-items: center;
+  }
+  .features aside {
+    width: 29%;
+  }
+  
+}
+
+/* ################## */
+/* desktopversion */
+/* ################# */
+@media (min-width: 1000px) {
+
+  header {
+    height: 70vh;
+  }
+  nav {
+    padding: 0%;
+  }
+
+  nav > ul {
+    padding: 2%;
+  }
+
+  nav a:hover {
+    color: lightslategray;
+  }
+
+  .about {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+
+  .about section{
+    column-gap: 10vh;
+  }
+
+  .about figure {
+    width: 43vh;
+    height: 43vh;
+    border-radius: 50%;
+    border: 10px solid var(--defaultpink);
+  }
+  
+  .about img {
+    border-radius: 50%;
+    height: 43vh;
+    width: 43vh;
+  }
+
+  .about aside {
+    width: 80%;
+  }
+
+
+}
